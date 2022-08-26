@@ -1,5 +1,5 @@
 ﻿int task;
-Console.WriteLine("Выберите задачу от 1 до 4");
+Console.WriteLine("Выберите задачу от 1 до 5");
 task = Convert.ToInt32(Console.ReadLine());
 if (task == 1 ){
 //задача 34
@@ -66,4 +66,31 @@ Console.Write(array1[i]+" ");
 i++;
 }
 Console.WriteLine("Количество элементов "+ count);   
+}
+if (task == 5 ){
+//задача 37
+int Num = Convert.ToInt32(new Random().Next(1,10));
+int[] array1 = new int[Num];
+int i = 0;
+while (i < array1.Length)
+{
+array1[i] = new Random().Next(1,999);
+Console.Write(array1[i]+" ");
+i++;
+}
+int ind = 0;
+int sum = 0;
+int N = array1.Length/2;
+int Z = array1.Length - 1;
+int[] array2 = new int[N];
+Console.Write("сумма пар ");
+while (ind < N) 
+{
+sum = array1[ind] + array1[Z];
+array2[ind] = sum;
+Console.Write(array2[ind]+" ");
+Z--;
+ind++;
+}
+
 }
