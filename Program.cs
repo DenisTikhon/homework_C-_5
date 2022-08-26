@@ -1,4 +1,8 @@
-﻿//задача 34
+﻿int task;
+Console.WriteLine("Выберите задачу от 1 до 4");
+task = Convert.ToInt32(Console.ReadLine());
+if (task == 1 ){
+//задача 34
 int N = Convert.ToInt32(new Random().Next(1,10));
 int[] array1 = new int[N];
 int i = 0;
@@ -10,4 +14,5 @@ if ((array1[i] % 2) == 0) {count++;}
 Console.Write(array1[i]+" ");
 i++;
 }
-Console.WriteLine("Чётных чисел "+ count);
+Console.WriteLine("Чётных чисел "+ count);   
+}
