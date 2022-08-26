@@ -53,3 +53,17 @@ i1++;
 int sum = max - min;
 Console.WriteLine("Разница чисел "+ sum);
 }
+if (task == 4 ){
+//задача 35
+int[] array1 = new int[123];
+int i = 0;
+int count = 0;
+while (i < array1.Length)
+{
+array1[i] = new Random().Next(1,999);
+if (array1[i] > 10 & array1[i] < 99 ) {count++;}
+Console.Write(array1[i]+" ");
+i++;
+}
+Console.WriteLine("Количество элементов "+ count);   
+}
